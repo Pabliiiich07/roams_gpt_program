@@ -3,7 +3,7 @@
 Este proyecto permite generar texto con un modelo GPT-2 a partir de un prompt cualquiera a través de peticiones POST.
 
 # Primero tendremos que clonar el repositorio a través del comando:
-- git clone https://github.com/Pabliiiich07/roams_gpt_program.git
+    - git clone https://github.com/Pabliiiich07/roams_gpt_program.git
 
 Para ejecutar el programa seguiremos los siguientes pasos:
 
@@ -20,7 +20,7 @@ Para ejecutar el programa seguiremos los siguientes pasos:
     - { "prompt": "Once upon a time", "model": "gpt2", "max_length": 25, "num_return_sequences": 5 } (Body, poner en JSON RAW)
 
 # 4. Ahora si todo ha ido bien recibiremos en el objeto response el prompt que hemos introducido junto a las respuestas del modelo solicitado.
-    - {
+    {
     "prompt": "Once upon a time",
     "response": [
         {
@@ -38,6 +38,6 @@ Para ejecutar el programa seguiremos los siguientes pasos:
         {
             "generated_text": "Once upon a time she had once again become her own mother.\n\nWith her young sister still reeling from their death she"
         }
-    ]
-}
+        ]
+    }
 
