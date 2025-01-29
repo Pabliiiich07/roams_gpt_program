@@ -1,23 +1,24 @@
-# roams_gpt_program
+# roams_gpt_program Pablo Sancho Saiz
 
 Este proyecto permite generar texto con un modelo GPT-2 a partir de un prompt cualquiera a través de peticiones POST.
 
 # Primero tendremos que clonar el repositorio a través del comando:
-    - git clone https://github.com/Pabliiiich07/roams_gpt_program.git
+    git clone https://github.com/Pabliiiich07/roams_gpt_program.git
 
 Para ejecutar el programa seguiremos los siguientes pasos:
 
 # 1. Preparar el entorno virtual e instalar las dependencias:
-    - python -m venv venv (Crear entorno virtual)
-    - .\venv\Scripts\Activate (Activar entorno virtual)
-    - pip install -r requirements.txt (Instalar dependencias)
+    python -m venv venv (Crear entorno virtual)
+    .\venv\Scripts\Activate (Activar entorno virtual)
+    pip install -r requirements.txt (Instalar dependencias)
 
 # 2. Ejecutar FastAPI a través de main.py:
-    - uvicorn app.main:app --reload (Inicializa la API)
+    uvicorn app.main:app --reload (Inicializa la API)
 
 # 3. Abrir Postman y realizar peticiones POST (Adjunto ejemplo):
-    - http://127.0.0.1:8000/generate/ (Endpoint)
-    - { "prompt": "Once upon a time", "model": "gpt2", "max_length": 25, "num_return_sequences": 5 } (Body, poner en JSON RAW)
+    http://127.0.0.1:8000/generate/ (Endpoint)
+    
+    { "prompt": "Once upon a time", "model": "gpt2", "max_length": 25, "num_return_sequences": 5 } (Body, poner en JSON RAW)
 
 # 4. Ahora si todo ha ido bien recibiremos en el objeto response el prompt que hemos introducido junto a las respuestas del modelo solicitado.
     {
